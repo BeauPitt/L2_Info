@@ -1,5 +1,7 @@
 # Notes cours technologies du WEB
 
+>L2 Informatique Université Blaise Pascal
+
 ## HTML
 
 ### Langage
