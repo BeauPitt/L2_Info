@@ -20,15 +20,15 @@ class Mot {
 
 	public String afficheVoyelles() {
 		String result="";
-		String voyelles = "aeiouyAEIOUY";
+		String voyelles = "aeiouyAEIOUY";  //Chaine de caractère regroupant les voyelles
 		for (int i = 0; i < mot.length(); i++) {
 			for (int j = 0; j < voyelles.length(); j++) {
-				if (mot.charAt(i) == voyelles.charAt(j)) {
+				if (mot.charAt(i) == voyelles.charAt(j)) { //comparaison entre la chaine de voyelle et le mot
 					result=result+mot.charAt(i);
 				}
 			}
 		}
-		return result;
+		return result; //retour d'une chaine de caractère composé uniquement de voyelles
 	}
 
 	public String estPalindrome() {
@@ -36,7 +36,7 @@ class Mot {
 		int result = 0;
 		int j = mot.length();
 		int i = 0;
-		if(mot.length()%2 == 0) {
+		if(mot.length()%2 == 0) { //si le mot a un nombre paire de lettres
 			while(i<j) {
 				if (mot.charAt(i) == mot.charAt(j-1)) {
 					result = result + 2;
@@ -51,7 +51,7 @@ class Mot {
 				palin = "Non";
 			}
 		}
-		else if(mot.length()%2 == 1) {
+		else if(mot.length()%2 == 1) { //si le mot contient un nombre impaire de lettres
 			while(i!=j-1){
 				if (mot.charAt(i) == mot.charAt(j-1)) {
 					result = result + 2;
@@ -70,21 +70,14 @@ class Mot {
 		return palin;
 	}
 
-	public String estContenu(String motD) {
-		int j = 0;
-		for (int i = 0; i < mot.length(); i++) {
-			if(motD.charAt(0) == mot.charAt(i)){
-				j++;
-				for(i = i+1; i<mot.length(); i++) {
-					
-				}
-			}
+	public boolean estContenu(String motD) {
+		return mot.contains(motD);  //la fonction contains retourne true si il le string mot contient motD
+	}
+/*	public String tri(){
+		String tmp ="";
+		for(int i =0; i<mot.length(); i++){
+													//fonction non aboutie
 		}
-		if(j == motD.length()){
-			return "Est contenu";
-		}else {
-		 	return "n'est pas contenu";
-			}
-		}
-
+	}
+*/
 }
