@@ -1,3 +1,3 @@
 # L2 Info
 
-On **pèse** dans le rap game.
+On **pèse** dans le rap game. *Yo* !
