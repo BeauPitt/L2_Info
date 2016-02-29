@@ -26,7 +26,11 @@ class Main {
 		*/
 
 		Mot mot = new Mot(); // On crée un nouveau mot 
-		System.out.println(mot);
-
+		//System.out.println(mot);
+		
+		//System.out.println(mot.afficheVoyelles());
+		//System.out.println(mot.estPalindrome());	
+		String motContenu = "oui";
+		System.out.println(mot.estContenu(motContenu));
 	}
 }
