@@ -1,4 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
 body {
-	font-family: sans-serif;
-	font-color : darkgrey;
+	
+	
+}
+
+table {
+  margin: 0;
+  border: 1px solid gray; /* Pas de bordure = "none". */
+  border-collapse: collapse; /* Valeur par défaut: "separate". */
+  border-spacing: 0;
 }
