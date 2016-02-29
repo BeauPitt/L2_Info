@@ -1,3 +1,7 @@
+@font-face {
+
+}
+
 html {
 	color : lightgray;
 	background-color: #111;
@@ -35,7 +39,9 @@ a:visited {
 }
 
 table {
+	margin: 1em;
 	text-align: center;
+	background-color: #222;
 }
 
 td {
