@@ -11,6 +11,7 @@ body {
 
 a {
 	color :lightblue;
+	text-decoration: none;
 }
 
 a:hover {
@@ -27,5 +28,9 @@ a:visited {
 
 table {
 	text-align: center;
-	border-style:  	
+}
+
+td {
+	padding: 1em;
+	font-size: 110%;
 }
