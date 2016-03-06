@@ -36,7 +36,7 @@ class Mot {
 		int result = 0;
 		int j = mot.length();
 		int i = 0;
-		if(mot.length()%2 == 0) { //si le mot a un nombre paire de lettres
+		if(mot.length()%2 == 0) { //si le mot a un nombre pair de lettres
 			while(i<j) {
 				if (mot.charAt(i) == mot.charAt(j-1)) {
 					result = result + 2;
@@ -51,7 +51,7 @@ class Mot {
 				palin = "Non";
 			}
 		}
-		else if(mot.length()%2 == 1) { //si le mot contient un nombre impaire de lettres
+		else if(mot.length()%2 == 1) { //si le mot contient un nombre impair de lettres
 			while(i!=j-1){
 				if (mot.charAt(i) == mot.charAt(j-1)) {
 					result = result + 2;
