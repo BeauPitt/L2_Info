@@ -1,16 +1,18 @@
 @font-face {
-	font-family: Fira Sans;
-	src : "fonts/Fira/FiraSans-Regular.otf";
+	font-family: FiraSans;
+	src : url("FiraSans.otf");
 }
 
 html {
 	color : lightgray;
 	background-color: #111;
-	font-family: 'Fira Sans';
+	font-family: FiraSans, serif;
 }
 
 body {
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
+	font-family: FiraSans, serif;
+
 }
 
 header {
