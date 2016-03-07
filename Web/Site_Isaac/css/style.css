@@ -65,3 +65,13 @@ td {
 footer {
 	text-align: center;
 }
+
+.galerie {
+	display: inline;
+}
+.galerie img {
+	display: inline-block;
+	width: 3em;
+	image-rendering: pixelated;
+
+}
