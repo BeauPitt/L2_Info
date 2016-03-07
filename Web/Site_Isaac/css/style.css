@@ -9,8 +9,6 @@ html {
 	font-family: FiraSans, serif;
 }
 
-
-
 body {
 	/*font-family: sans-serif;*/
 	font-family: FiraSans, serif;
@@ -18,14 +16,18 @@ body {
 }
 
 header {
-	 background: url("../img/fondbanniere.jpeg") repeat fixed 0% 0% transparent;
+	background: url("../img/fondbanniere.jpeg") repeat fixed 0% 0% transparent;
 	text-align: center;
 }
 
+hr.head {
+	margin: 0;
+}
 nav {
+	margin-top: 0;
 	text-align: center;
 	font-size: 150%;
-	background-color: #000000;
+	background-color: #222;
 }
 
 section {
