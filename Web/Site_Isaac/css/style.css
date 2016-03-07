@@ -79,10 +79,9 @@ td {
 	font-size: 110%;
 }
 
-
 footer {
 	text-align: center;
-<<<<<<< HEAD
+	float: 
 }
 
 .galerie {
@@ -92,8 +91,5 @@ footer {
 	display: inline-block;
 	width: 3em;
 	image-rendering: pixelated;
-
-=======
-	float: 
->>>>>>> origin/master
+	image-rendering: -moz-crisp-edges;
 }
