@@ -9,6 +9,8 @@ html {
 	font-family: FiraSans, serif;
 }
 
+
+
 body {
 	/*font-family: sans-serif;*/
 	font-family: FiraSans, serif;
@@ -16,21 +18,35 @@ body {
 }
 
 header {
+	 background: url("../img/fondbanniere.jpeg") repeat fixed 0% 0% transparent;
 	text-align: center;
 }
 
 nav {
 	text-align: center;
 	font-size: 150%;
+	background-color: #000000;
 }
 
-/*section {
-	float: left;
+section {
+	/*float: left;*/
+	margin-left: 2%;
+	width: 70%;
+	height: 70%;
 }
 
 aside {
 	float: right;
-}*/
+	width: 20%;
+	height: 20%;
+	margin-top: 20%;
+	/*margin-left: 80%;*/
+	background-color: #222;
+	padding: 2%;
+	/*position: fixed;*/
+	border-left: thick solid lightgray;
+	font-size: 120%;
+}
 
 a {
 	color :lightblue;
@@ -64,4 +80,5 @@ td {
 
 footer {
 	text-align: center;
+	float: 
 }
