@@ -5,17 +5,7 @@
 import java.util.*;
 import java.lang.*;
 
-class Page {
-
-	public enum Jours {
-		Lundi,
-		Mardi,
-		Mercredi,
-		Jeudi,
-		Vendredi,
-		Samedi,
-		Dimanche;
-	}
+class Page implements Collection<Jour> {
 
 	public Page() {
 

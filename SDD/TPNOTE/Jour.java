@@ -5,10 +5,10 @@
 import java.util.*;
 
 
-class Jour {
+class Jour implements Collection<Heure> {
 
-	private String nom;
-	private Heure[] heures;
+	// private String nom;
+	Collection<Heure> heures = new ArrayList<Heure>() ;
 
 	public Jour() {
 
