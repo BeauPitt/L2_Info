@@ -1,0 +1,5 @@
+class Ordinateur {
+	public Ordinateur() {
+		
+	}
+}

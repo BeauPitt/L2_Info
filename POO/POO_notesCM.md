@@ -114,3 +114,12 @@ import java.util.*;
 
 interfaces `Iterable<T>` et `Iterator<E>`
 
+[...]
+
+## Programmation Java avancée
+
+### Exceptions
+
+- Gestion d'erreur
+- Imprévue
+- -> événement

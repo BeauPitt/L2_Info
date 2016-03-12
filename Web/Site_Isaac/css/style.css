@@ -48,6 +48,7 @@ aside {
 	/*position: fixed;*/
 	border-left: thick solid lightgray;
 	font-size: 120%;
+	box-shadow: 1px 1px 5px #555;
 }
 
 a {
@@ -81,7 +82,6 @@ td {
 
 footer {
 	text-align: center;
-	float: 
 }
 
 .galerie {
