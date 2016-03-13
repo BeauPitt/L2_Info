@@ -1,4 +1,4 @@
-class Juif {
+	class Juif {
 	
 	private boolean vivant; // ?
 	private int identif;

@@ -5,9 +5,12 @@
 import java.util.*;
 import java.lang.*;
 
-class Page implements Collection<Jour> {
 
-	public Page() {
-
+class Page{
+	private int identif;
+	private Jour[] jour;
+	public Page(int id, Jour[] j) {
+		identif = id;
+		jour = j;
 	}
 }
