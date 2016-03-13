@@ -93,3 +93,9 @@ footer {
 	image-rendering: pixelated;
 	image-rendering: -moz-crisp-edges;
 }
+.galerie li {
+	display: inline-block;
+	width: 3em;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+}
