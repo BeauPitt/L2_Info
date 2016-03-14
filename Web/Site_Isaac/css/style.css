@@ -12,7 +12,8 @@ html {
 body {
 	/*font-family: sans-serif;*/
 	font-family: FiraSans, serif;
-
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 header {
