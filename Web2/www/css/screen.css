@@ -1,0 +1,24 @@
+@media screen and (max-width: 1600px) {
+  aside.perso {
+    display: none;
+  }
+ }
+ @media screen and (max-width: 1000px){
+ 	aside.index {
+ 		display: none;
+ 	}
+ 	body {
+ 			margin-left: 0%;
+			margin-right: 0%;
+ 	}
+ }
+ @media screen and (min-width: 700px){
+ 	nav.mobile {
+ 		display : none;
+ 	}
+ }
+ @media screen and (max-width: 700px){7
+ 	nav.web {
+ 		display : none;
+ 	}
+ }
