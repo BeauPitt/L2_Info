@@ -1,12 +1,20 @@
 class Carte {
 
-	private final String couleur;
+	private final int couleur;
 	private final int valeur; // 2 = 2; As = 14;
 
-	public Carte(int v, String c) {
+	public Carte(int v, int c) {
 		couleur = c;
 		valeur = v;
 	}
+
+	public int getCouleur() {
+		return this.couleur;
+	}
+ 	
+ 	public int getValeur() {
+ 		return this.valeur;
+ 	}
 
 	public int compare(Carte c) {
 		if (this.valeur < c.valeur) {
@@ -19,6 +27,6 @@ class Carte {
 
 	@Override
 	public String toString() {
-
+		return " "+couleur +" " + valeur;
 	}
 }
