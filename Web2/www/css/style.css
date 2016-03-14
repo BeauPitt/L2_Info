@@ -14,6 +14,7 @@ body {
 	font-family: FiraSans, serif;
 	margin-left: 10%;
 	margin-right: 10%;
+	margin-bottom: 60px;
 }
 
 header {
@@ -36,6 +37,44 @@ section {
 	margin-left: 2%;
 	width: 70%;
 	height: 70%;
+}
+
+form p {
+	font-size: 120%;
+}
+
+form {
+	text-align: center;
+}
+
+.col1 {
+	
+	display: inline-block;
+	margin: 2em;
+}
+
+.col2 {
+	
+	display: inline-block;
+	margin : 2em;
+}
+
+.col3 {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+input {
+	margin-top: 1em;
+	box-shadow: 1px 1px 12px #444;
+	width: 15em;
+	height: 2em;
+}
+
+.envoi {
+	width: 10em;
+	height: 4em;
+	font-size: 120%;
 }
 
 aside {
@@ -83,6 +122,15 @@ td {
 
 footer {
 	text-align: center;
+	position:fixed;
+    height:30px;
+    background: url("../img/fondbanniere.jpeg") repeat fixed 0% 0% transparent; 
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+    padding: 5px;
+
 }
 
 .galerie {
