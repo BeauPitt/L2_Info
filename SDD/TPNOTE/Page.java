@@ -3,6 +3,7 @@
 */
 
 class Page{
+
 	int identif;
 	Jour jour0;
 	Jour jour1;

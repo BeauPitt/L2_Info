@@ -21,4 +21,7 @@ class Jour {
 	public void GetEvent(int heure1){
 		heure.get(heure1);
 	}
+	// public String toString() {
+		
+	// }
 }
