@@ -1,0 +1,102 @@
+@font-face {
+	font-family: FiraSans;
+	src : url("FiraSans.otf");
+}
+
+html {
+	color : lightgray;
+	background-color: #111;
+	font-family: FiraSans, serif;
+}
+
+body {
+	/*font-family: sans-serif;*/
+	font-family: FiraSans, serif;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+header {
+	background: url("../img/fondbanniere.jpeg") repeat fixed 0% 0% transparent;
+	text-align: center;
+}
+
+hr.head {
+	margin: 0;
+}
+nav {
+	margin-top: 0;
+	text-align: center;
+	font-size: 150%;
+	background-color: #222;
+}
+
+section {
+	/*float: left;*/
+	margin-left: 2%;
+	width: 70%;
+	height: 70%;
+}
+
+aside {
+	float: right;
+	width: 20%;
+	height: 20%;
+	margin-top: 20%;
+	/*margin-left: 80%;*/
+	background-color: #222;
+	padding: 2%;
+	/*position: fixed;*/
+	border-left: thick solid lightgray;
+	font-size: 120%;
+	box-shadow: 1px 1px 5px #555;
+}
+
+a {
+	color :lightblue;
+	text-decoration: none;
+}
+
+a:hover {
+	color : lightgreen;
+}
+
+a:visited {
+	color : pink;
+}
+
+#navigation li {
+	display : inline;
+	padding: 1em;
+}
+
+table {
+	margin: 1em;
+	text-align: center;
+	background-color: #222;
+}
+
+td {
+	padding: 1em;
+	font-size: 110%;
+}
+
+footer {
+	text-align: center;
+}
+
+.galerie {
+	display: inline;
+}
+.galerie img {
+	display: inline-block;
+	width: 3em;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+}
+.galerie li {
+	display: inline-block;
+	width: 3em;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+}
