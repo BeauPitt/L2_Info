@@ -22,7 +22,16 @@ class Main {
 		 //System.out.println(test3.toString());
 
 		 // test 4 :
-		Page pageTest = new Page(4);
+		Page pageTest = new Page(1);
+		pageTest.affichage();
+
+		System.out.println("Voulez-vous ajouter un evenement ?");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("O/N");
+		String str = sc.nextLine();
+		if (str.equals("O") || str.equals("o")) {
+			pageTest.ajouterEvent();
+		}
 		pageTest.affichage();
 	}
 }
