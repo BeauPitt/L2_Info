@@ -35,15 +35,18 @@ class Page {
 			System.out.print("	"+ jours[i].toString()+"   ");	
 		}
 		System.out.print("\n");
+		System.out.println("---------------------------------------------------------------------------------------------------------------------------");
+		System.out.print("\n");
 
 		// On affiche les heures
 		for (int i = 0; i < Jour.NB_HEURE; i++) {
-			System.out.print(jours[i].heures[i].toString());
+			System.out.print(jours[0].heures[i].toString());
 			// On affiche les évenements
 			for (int j = 0; j < NB_JOUR; j++) {
-				System.out.print(" lol"+j+"		");
+				// provisoire
+				System.out.print(jours[j].heures[i].event);
 			}
-			System.out.println();
+			System.out.print(" \n\n");
 		}
 	}
 }

@@ -4,7 +4,7 @@
 import java.util.Hashtable;
 
 class Jour {
-	public static final int NB_HEURE = 10;
+	public static final int NB_HEURE = 11;
 
 	int identif; // 0 : lundi etc.
 	Heure[] heures = new Heure[NB_HEURE];
