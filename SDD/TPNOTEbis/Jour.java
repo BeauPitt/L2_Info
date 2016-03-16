@@ -7,12 +7,14 @@ class Jour {
 	public static final int NB_HEURE = 10;
 
 	int identif; // 0 : lundi etc.
-	Heure[] heures;
-	
+	Heure[] heures = new Heure[NB_HEURE];
+
 	public Jour(int id) {
 		if (identif > -1 && identif < 7) {
 			identif = id;
-			heures = new Heure[NB_HEURE];
+			for (int i = 0; i < NB_HEURE; i++) {
+				heures[i] = new Heure(i+8, "");
+			}
 		} else throw new IllegalArgumentException();
 	}
 

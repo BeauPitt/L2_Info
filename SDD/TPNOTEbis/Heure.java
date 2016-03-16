@@ -23,6 +23,9 @@ class Heure {
 	}
 
 	public String toString() {
-		return valeur + " h : " + event; 
+		if (valeur < 10) {
+			return "0"+valeur + " h : " + event; 
+		}
+		else return valeur + " h : " + event; 
 	}
 }
