@@ -13,6 +13,9 @@ class Page {
 		if (id < 52) {
 			identif = id;
 			jours = new Jour[NB_JOUR];
+			for (int i = 0; i < NB_JOUR; i++) {
+				jours.setId(i) = i;
+			}
 		} else throw new IllegalArgumentException();
 	}
 
