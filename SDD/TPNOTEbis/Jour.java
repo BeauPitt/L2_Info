@@ -24,7 +24,7 @@ class Jour {
 		identif = id;
 	}
 
-	public String toString(int identif) {
+	public String toString() {
 		String temp;
 		switch (identif) {
 			case 0 : temp = "Lundi";

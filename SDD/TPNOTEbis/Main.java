@@ -17,13 +17,12 @@ class Main {
 		// Heure test2 = new Heure(4, " ");
 		// System.out.println(test2);
 
-		// // test 3 : 
-		// Jour test3 = new Jour(1);
-		// System.out.println(test3);
+		 // test 3 : 
+		 //Jour test3 = new Jour(1);
+		 //System.out.println(test3.toString());
 
 		 // test 4 :
 		Page pageTest = new Page(4);
-
 		pageTest.affichage();
 	}
 }

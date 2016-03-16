@@ -3,18 +3,14 @@
 */
 
 class Page {
-
 	public static final int NB_JOUR = 7;
-
 	int identif;
-	Jour[] jours;
-
+	Jour jours[] = new Jour[NB_JOUR];
 	public Page(int id) {
 		if (id < 52) {
 			identif = id;
-			jours = new Jour[NB_JOUR];
-			for (int i = 0; i < NB_JOUR; i++) {
-				jours.setId(i) = i;
+			for(int j=0; j<7; j++){
+				jours[j] = new Jour(j);
 			}
 		} else throw new IllegalArgumentException();
 	}
@@ -32,9 +28,7 @@ class Page {
 
 	public void affichage() {
 		for (int i = 0; i < NB_JOUR; i++) {
-			jours[i].setId(i);
-			System.out.print("  "+ jours[i]);
-			
+			System.out.print("  "+ jours[i].toString());	
 		}
 	}
 }
