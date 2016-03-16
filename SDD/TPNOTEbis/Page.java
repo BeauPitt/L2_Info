@@ -29,7 +29,7 @@ class Page {
 
 	public void affichage() {
 		for (int i = 0; i < NB_JOUR; i++) {
-			jours[i] = jours.identif;
+			jours[i].setId(i);
 			System.out.print("  "+ jours[i]);
 			
 		}

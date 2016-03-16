@@ -16,7 +16,15 @@ class Jour {
 		} else throw new IllegalArgumentException();
 	}
 
-	public String toString() {
+	public int getId() {
+		return identif;
+	}
+
+	public void setId(int id) {
+		identif = id;
+	}
+
+	public String toString(int identif) {
 		String temp;
 		switch (identif) {
 			case 0 : temp = "Lundi";
