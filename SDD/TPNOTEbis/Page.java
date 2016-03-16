@@ -3,9 +3,13 @@
 */
 
 class Page {
+	
+	// attributs
 	public static final int NB_JOUR = 7;
 	int identif;
 	Jour jours[] = new Jour[NB_JOUR];
+
+	// constructeur
 	public Page(int id) {
 		if (id < 52) {
 			identif = id;
@@ -15,17 +19,18 @@ class Page {
 		} else throw new IllegalArgumentException();
 	}
 
-	
+	// getter
 	public int getID() {
 		return identif;
 	}
 
-	// du boulot pour le toString.. si affichage d'une page
-
+	// toString
+	@Override
 	public String toString() {
 		return "Semaine "+identif;
 	}
 
+	// Affichage d'une page de calendrier
 	public void affichage() {
 		// On affiche la semaine
 		System.out.println("\n		>> "+this+ " <<\n");
@@ -43,7 +48,6 @@ class Page {
 			System.out.print(jours[0].heures[i].toString());
 			// On affiche les évenements
 			for (int j = 0; j < NB_JOUR; j++) {
-				// provisoire
 				System.out.print(jours[j].heures[i].event);
 			}
 			System.out.print(" \n\n");

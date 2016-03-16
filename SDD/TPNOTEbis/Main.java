@@ -1,5 +1,5 @@
 /*
-* Classe Principale : TP Noté de SDD Agenda
+* Classe Principale : TP Note de SDD Agenda
 * Lylian BLAUD - Loris CROCE
 */
 

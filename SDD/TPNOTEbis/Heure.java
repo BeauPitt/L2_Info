@@ -1,8 +1,10 @@
 class Heure {
 	
+	// attributs
 	int valeur;
 	String event;
 
+	// constructeur
 	public Heure(int v, String e) {
 		if (v >= 8 && v <= 18) {
 			valeur = v;
@@ -10,6 +12,7 @@ class Heure {
 		} else throw new IllegalArgumentException();
 	}
 
+	// getters
 	public int getValeur() {
 		return valeur;
 	}
@@ -18,10 +21,13 @@ class Heure {
 		return event;
 	}
 
+	// setter
 	public void setEvent(String event) {
 		this.event = event;
 	}
 
+	// toString
+	@Override
 	public String toString() {
 		if (valeur < 10) {
 			return "0"+valeur + " h : " + event; 

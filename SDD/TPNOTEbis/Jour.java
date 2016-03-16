@@ -1,14 +1,15 @@
 /*
 * Classe Jour
 */
-import java.util.Hashtable;
 
 class Jour {
-	public static final int NB_HEURE = 11;
 
-	int identif; // 0 : lundi etc.
+	// attributs
+	public static final int NB_HEURE = 11;
+	int identif; // 0 : Lundi 1 : Mardi etc.
 	Heure[] heures = new Heure[NB_HEURE];
 
+	// constructeur
 	public Jour(int id) {
 		if (identif > -1 && identif < 7) {
 			identif = id;
@@ -18,14 +19,18 @@ class Jour {
 		} else throw new IllegalArgumentException();
 	}
 
+	// getter
 	public int getId() {
 		return identif;
 	}
 
+	// setter
 	public void setId(int id) {
 		identif = id;
 	}
 
+	// toString
+	@Override
 	public String toString() {
 		String temp;
 		switch (identif) {
