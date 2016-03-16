@@ -28,11 +28,11 @@ class Page {
 
 	public void affichage() {
 		// On affiche la semaine
-		System.out.println("\n		"+this+ "\n");
+		System.out.println("\n		>> "+this+ " <<\n");
 
 		// On affiche les jours de la semaine
 		for (int i = 0; i < NB_JOUR; i++) {
-			System.out.print("	"+ jours[i].toString()+"   ");	
+			System.out.print("	 "+ jours[i].toString()+"   ");	
 		}
 		System.out.print("\n");
 		System.out.println("---------------------------------------------------------------------------------------------------------------------------");
