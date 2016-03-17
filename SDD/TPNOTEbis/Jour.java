@@ -14,7 +14,7 @@ class Jour {
 		if (identif > -1 && identif < 7) {
 			identif = id;
 			for (int i = 0; i < NB_HEURE; i++) {
-				heures[i] = new Heure(i+8, "");
+				heures[i] = new Heure(i+8, "|   	 |");
 			}
 		} else throw new IllegalArgumentException();
 	}
@@ -34,19 +34,19 @@ class Jour {
 	public String toString() {
 		String temp;
 		switch (identif) {
-			case 0 : temp = "Lundi";
+			case 0 : temp = "Lun.";
 				break;
-			case 1 : temp = "Mardi";
+			case 1 : temp = "Mar.";
 				break;
-			case 2 : temp = "Mercredi";
+			case 2 : temp = "Mer.";
 				break;
-			case 3 : temp = "Jeudi";
+			case 3 : temp = "Jeu.";
 				break;
-			case 4 : temp = "Vendredi";
+			case 4 : temp = "Ven.";
 				break;
-			case 5 : temp = "Samedi";
+			case 5 : temp = "Sam.";
 				break;
-			case 6 : temp = "Dimanche";
+			case 6 : temp = "Dim.";
 				break;
 			default : temp = "Erreur"; 
 		}

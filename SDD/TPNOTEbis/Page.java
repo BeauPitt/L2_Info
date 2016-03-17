@@ -80,6 +80,6 @@ class Page {
 			String eventEnope = sc.nextLine(); // Deux scanner car sinon bug
 			String eventE = sc.nextLine(); // l'evenement est stocke dans cette variable
 			this.jours[jourJ].heures[heureH].event = eventE;
-			System.out.println("Evenement ajouté.")
+			System.out.println("Evenement ajouté.");
 	}
 }
