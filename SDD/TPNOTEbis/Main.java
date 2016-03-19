@@ -8,30 +8,24 @@ import java.io.*;
 
 class Main {
 	public static void main(String args[]) {
-		
-		// // test 1 :
-		// Heure test1 = new Heure(15, "Poney");
-		// System.out.println(test1);
 
-		// // test 2 : 
-		// Heure test2 = new Heure(4, " ");
-		// System.out.println(test2);
+		Scanner sc = new Scanner(System.in); // récuperation des evenements clavier
+		Agenda agenda = new Agenda(2016); // on cree un agenda pour l'anneee courante
 
-		 // test 3 : 
-		 //Jour test3 = new Jour(1);
-		 //System.out.println(test3.toString());
-
-		 // test 4 :
-		Page pageTest = new Page(1);
-		pageTest.affichage();
-
+		System.out.println("Bonjour, bienvenue dans iAgenda™");
+		System.out.println("Quelle page de l'agenda "+ agenda.getId() +" voulez-vous afficher ?");
+		int pg = sc.nextInt();
+		agenda.getPage(pg).affichage();
 		System.out.println("Voulez-vous ajouter un evenement ?");
-		Scanner sc = new Scanner(System.in);
 		System.out.println("O/N");
+		String strNope = sc.nextLine(); // scanner "poubelle" pour que la saisie ait bien lieu..
 		String str = sc.nextLine();
+		// si oui on ajoute un evenement et on affiche l'agenda
 		if (str.equals("O") || str.equals("o")) {
-			pageTest.ajouterEvent();
+			agenda.getPage(pg).ajouterEvent(); 
+			agenda.getPage(pg).affichage();
+
 		}
-		pageTest.affichage();
+		else System.exit(1); // quitte le programme
 	}
 }

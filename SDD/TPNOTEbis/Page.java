@@ -9,8 +9,8 @@ class Page {
 	
 	// attributs
 	public static final int NB_JOUR = 7;
-	int identif;
-	Jour jours[] = new Jour[NB_JOUR];
+	private int identif;
+	private Jour jours[] = new Jour[NB_JOUR];
 
 	// constructeur
 	public Page(int id) {
@@ -30,7 +30,7 @@ class Page {
 	// toString
 	@Override
 	public String toString() {
-		return "Semaine "+identif;
+		return "Semaine n°"+identif;
 	}
 
 	// Affichage d'une page de calendrier
@@ -40,19 +40,19 @@ class Page {
 		System.out.print("######  ");
 		// On affiche les jours de la semaine
 		for (int i = 0; i < NB_JOUR; i++) {
-			System.out.print(""+ jours[i].toString()+"   |  ");	
+			System.out.print(""+ jours[i].toString()+"		| ");	
 		}
 		// esthetique...
 		System.out.print("\n");
-		System.out.println("###### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("###### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.print("\n");
 
 		// On affiche les heures
 		for (int i = 0; i < Jour.NB_HEURE; i++) {
-			System.out.print(jours[0].heures[i].toString());
+			System.out.print(jours[0].getHeure(i).toString()+"");
 			// On affiche les évenements
 			for (int j = 0; j < NB_JOUR; j++) {
-				System.out.print(jours[j].heures[i].event);
+				System.out.print("|"+jours[j].getHeure(i).getEvent());
 			}
 			System.out.print(" \n\n");
 		}
@@ -78,8 +78,12 @@ class Page {
 			System.out.println("Et enfin, quel evenement voulez vous ajouter ?");
 			// on récupère l'evenemet
 			String eventEnope = sc.nextLine(); // Deux scanner car sinon bug
-			String eventE = sc.nextLine(); // l'evenement est stocke dans cette variable
-			this.jours[jourJ].heures[heureH].event = eventE;
+			String eventE = sc.nextLine(); // l'evenement est stocke dans cette variable7
+			int tmp = 15-eventE.length(); // on stocke la taille de l'evenement rentré
+			for (int x = 0; x < tmp; x++) {
+				eventE = eventE + " "; // on complete la chaine avec des espaces pour aligner les evenements
+			}
+			this.jours[jourJ].getHeure(heureH).getEvent().setNom(eventE);
 			System.out.println("Evenement ajouté.");
 	}
 }

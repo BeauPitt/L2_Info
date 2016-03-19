@@ -6,24 +6,27 @@ class Jour {
 
 	// attributs
 	public static final int NB_HEURE = 11;
-	int identif; // 0 : Lundi 1 : Mardi etc.
-	Heure[] heures = new Heure[NB_HEURE];
+	private int identif; // 0 : Lundi 1 : Mardi etc.
+	private Heure[] heures = new Heure[NB_HEURE];
 
 	// constructeur
 	public Jour(int id) {
 		if (identif > -1 && identif < 7) {
 			identif = id;
 			for (int i = 0; i < NB_HEURE; i++) {
-				heures[i] = new Heure(i+8, "|   	 |");
+				heures[i] = new Heure(i+8, "               ");
 			}
 		} else throw new IllegalArgumentException();
 	}
 
-	// getter
+	// getters
 	public int getId() {
 		return identif;
 	}
 
+	public Heure getHeure(int i){
+		return heures[i];
+	}
 	// setter
 	public void setId(int id) {
 		identif = id;
