@@ -5,13 +5,14 @@
 
 html {
 	color : lightgray;
-	background-color: #111;
+	background-color: rgba(0, 0, 0, 0.88);
 	font-family: FiraSans, serif;
 }
 
 body {
 	/*font-family: sans-serif;*/
 	font-family: FiraSans, serif;
+    background-color: #111;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 60px;
@@ -30,6 +31,11 @@ nav {
 	text-align: center;
 	font-size: 150%;
 	background-color: #222;
+}
+
+article {
+    padding: 1%;
+    padding-bottom: 10%;
 }
 
 section {
