@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" media="screen and (max-width: 1600px)" href="css/screen.css" type="text/css" />		
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	<link rel="stylesheet" media="screen " href="css/screen.css" type="text/css" />	
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
 <body>
@@ -13,7 +14,20 @@
 		<h1>The Binding of Isaac Wiki</h1>
 		<hr class="head" />
 	</header>
-	<nav>
+	<nav class="mobile">
+		<ul id="menu-accordeon" class="menu">
+  		    <li><img alt="button.png" src="img/button.png">
+      			<ul>
+      			    <li><a href="index.html">Accueil</a></li>
+       			    <li><a href="astuces.html">Astuces</a></li>
+        			<li><a href="items.html">Items</a></li>
+         			<li><a href="persos.html">Personnages</a></li>
+         			<li><a href="register.html">Inscription</a></li>
+      			</ul>
+   			</li>
+   		</ul>
+	</nav>
+	<nav class="web">
 		<ul id="navigation">
 			<li>
 				<a href="index.html">Accueil</a>

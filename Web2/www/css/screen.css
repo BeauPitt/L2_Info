@@ -7,6 +7,12 @@
  	aside.index {
  		display: none;
  	}
+ 	aside.astuces {
+ 		display: none;
+ 	}
+ 	aside.items {
+ 		display: none;
+ 	}
  	body {
  			margin-left: 0%;
 			margin-right: 0%;
@@ -17,7 +23,7 @@
  		display : none;
  	}
  }
- @media screen and (max-width: 700px){7
+ @media screen and (max-width: 700px){
  	nav.web {
  		display : none;
  	}
