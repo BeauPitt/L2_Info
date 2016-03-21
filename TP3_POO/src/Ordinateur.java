@@ -5,11 +5,11 @@ class Ordinateur extends Joueur {
 	
 	public Ordinateur(String nom) {
 		super(nom);
-		ran = new Random(); //Crée un nombre aléatoire
+		ran = new Random(); // CrÃ©e un nombre alÃ©atoire
 	}
 
 	@Override
-	//Ici la fonction choisirCarte retourne une carte choisie aléatoirement dans le paquet
+	// Ici la fonction choisirCarte retourne une carte choisie alÃ©atoirement dans le paquet
 	public Carte choisirCarte() {
 		return this.p.getCarte(ran.nextInt(this.p.getNombreCarte()));
 	}

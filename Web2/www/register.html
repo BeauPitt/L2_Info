@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 	<link rel="shortcut icon" href="img/favicon.ico"/>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<header>
@@ -30,44 +31,33 @@
 			<li>
 				<a href="register.html">Inscription</a>
 			</li>			
-			<!-- Inscription -->
 		</ul>
 		<hr/>	
 	</nav>
-	<!-- <aside>
-		
-		<ul>
-			<li><a href="http://bindingofisaac.com/">Site officiel</a></li>
-			<li><a href="http://bindingofisaac.wikia.com/wiki/The_Binding_of_Isaac_Wiki">Wiki Isaac</a></li>
-			<li><a href="https://store.steampowered.com/app/250900/">Acheter le jeu (Steam)</a></li>
-			<li><a href="https://www.humblebundle.com/store/p/bindingofisaac_rebirth_storefront">Acheter le jeu (Humble Store)</a></li>
-		</ul> 
-	</aside>-->
+
 	<article class="">
 		<h2>Formulaire d'inscription</h2>
 		
-		<form>
+		<form name="form" action="htbin/register.py">
 			<div class="col1">
-			<p>Nom</p>
-  			<input type="text" name="nom">
-			<p>Nom d'utilisateur</p>
-			<input type="text" name="pseudo">
-			<p>Date de naissance (jj/mm/aaaa)</p>
-			<input type="text" name="datedenaissance">
+                <p>Nom</p>
+                <input type="text" name="lastname">
+                <p>Nom d'utilisateur</p>
+                <input type="text" name="username">
+                <p>Date de naissance (jj/mm/aaaa)</p>
+                <input type="text" name="birthdate">
 			</div>
 			<div class="col2">
-			<p>Prenom(s)</p>
-			<input type="text" name="prenom">
-
-			<p>Mot de passe</p>
-			<input type="text" name="password">
-			<p>e-mail</p>
-			<input type="text" name="password">
+                <p>Prenom(s)</p>
+                <input type="text" name="firstname">
+                <p>Mot de passe</p>
+                <input type="text" name="userpwd">
+                <p>e-mail</p>
+                <input type="text" name="useremail">
 			</div>
 			<br/>
 			<div class="col3">
-			
-			<input class="envoi" type="submit" name="envoyer">
+                <input class="envoi" type="submit" name="envoyer" onClick="controle(form1)">
 			</div>
 
 		</form>

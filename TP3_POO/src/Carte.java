@@ -2,17 +2,17 @@ class Carte {
 
 	private final int valeur; // 2 = 2; As = 14;
 
-	//Constructeur de la classe Carte
+	// Constructeur de la classe Carte
 	public Carte(int v) {
 		valeur = v;
 	}
  	
-	//Renvoie la valeur de la carte
+	// Renvoie la valeur de la carte
  	public int getValeur() {
  		return this.valeur;
  	}
  	
- 	//Cette méthode Compare deux carte et renvoie -1, 1 ou 0 en fonction de quelle carte à la plus forte valeur
+ 	// Cette mÃ©thode Compare deux carte et renvoie -1, 1 ou 0 en fonction de quelle carte Ã  la plus forte valeur
 	public int compare(Carte c) {
 		if (this.valeur < c.valeur) {
 			return -1;
@@ -23,7 +23,7 @@ class Carte {
 	}
 
 	@Override
-	//Renvoie la valeur de la carte sous forme de texte
+	// Renvoie la valeur de la carte sous forme de texte
 	public String toString() {
 		String tmp = "Erreur carte";
 		switch (valeur) {
