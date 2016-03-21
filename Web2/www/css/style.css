@@ -21,6 +21,7 @@ body {
 header {
 	background: url("../img/fondbanniere.jpeg") repeat fixed 0% 0% transparent;
 	text-align: center;
+    margin-top: 1%;
 }
 
 hr.head {

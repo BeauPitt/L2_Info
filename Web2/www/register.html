@@ -9,7 +9,6 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes" />
 	<link rel="stylesheet" media="screen " href="css/screen.css" type="text/css" />	
 	<link rel="shortcut icon" href="img/favicon.ico"/>
-    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<header>
@@ -53,26 +52,26 @@
 	<article class="">
 		<h2>Formulaire d'inscription</h2>
 		
-		<form name="form" action="htbin/register.py">
+		<form name="form" action="htbin/register.py" method="post">
 			<div class="col1">
                 <p>Nom</p>
-                <input type="text" name="lastname">
+                <input type="text" name="lastname" id="lastname">
                 <p>Nom d'utilisateur</p>
-                <input type="text" name="username">
+                <input type="text" name="username" id="username">
                 <p>Date de naissance (jj/mm/aaaa)</p>
-                <input type="text" name="birthdate">
+                <input type="text" name="birthdate" id="birthdate"> <!-- facultatif-->
 			</div>
 			<div class="col2">
                 <p>Prenom(s)</p>
-                <input type="text" name="firstname">
+                <input type="text" name="firstname" id="firstname">
                 <p>Mot de passe</p>
-                <input type="text" name="userpwd">
+                <input type="text" name="userpwd" id="userpwd">
                 <p>e-mail</p>
-                <input type="text" name="useremail">
+                <input type="text" name="useremail" id="useremail">
 			</div>
 			<br/>
 			<div class="col3">
-                <input class="envoi" type="submit" name="envoyer" onClick="controle(form1)">
+                <input class="envoi" type="submit" name="envoyer" id="envoi" disabled>
 			</div>
 
 		</form>
@@ -80,6 +79,6 @@
 	<footer>
 		<p>L2 Info - TP WEB</p>
 	</footer>
-
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
