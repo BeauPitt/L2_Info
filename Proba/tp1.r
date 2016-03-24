@@ -95,3 +95,9 @@ Y = as.factor(Y) # pour signaler qu'il s'agit d'une variable qualitative
 table(Y)
 table(Y)/length(Y)
 summary(Y)
+
+# 2. 
+
+Y=c(rep("petit",4),rep("grand",7),rep("moyen",3))
+freq=table(Y)
+barplot(freq)

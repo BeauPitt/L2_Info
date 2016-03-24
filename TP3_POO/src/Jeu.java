@@ -1,5 +1,5 @@
 class Jeu {
-	static Paquet p;
+	private static Paquet p;
 	
 	// Méthode main
 	public static void main (String[] args) {

@@ -2,9 +2,9 @@ import java.util.*;
 
 class Paquet {
 	public ArrayList<Carte> listeC;
-	Random ran;
-	Random ran2;
-	Random ran3;
+	private Random ran;
+	private Random ran2;
+	private Random ran3;
 	
 	// Constructeur de la classe Paquet, crée uen liste de Carte
 	public Paquet() {

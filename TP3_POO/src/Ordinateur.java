@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Ordinateur extends Joueur {
-	Random ran;
+	private Random ran;
 	
 	public Ordinateur(String nom) {
 		super(nom);
