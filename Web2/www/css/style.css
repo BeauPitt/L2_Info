@@ -16,6 +16,9 @@ body {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 60px;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(0, 0, 0, 1);
+	box-shadow:         0px 0px 30px 0px rgba(0, 0, 0, 1);
 }
 
 header {
@@ -28,7 +31,7 @@ hr.head {
 	margin: 0;
 }
 nav {
-	margin-top: 0;
+	margin-top: 0px;
 	text-align: center;
 	font-size: 150%;
 	background-color: #222;
@@ -89,13 +92,12 @@ aside {
 	width: 20%;
 	height: 20%;
 	margin-top: 20%;
-	/*margin-left: 80%;*/
+	margin-right: 1%;
 	background-color: #222;
 	padding: 2%;
 	/*position: fixed;*/
 	border-left: thick solid lightgray;
 	font-size: 120%;
-	box-shadow: 1px 1px 5px #555;
 }
 
 a {
@@ -193,6 +195,13 @@ footer {
 .galerie li {
 	display: inline-block;
 	width: 3em;
+}
+
+img {
 	image-rendering: pixelated;
 	image-rendering: -moz-crisp-edges;
+}
+
+h3 {
+	padding-top: 10px;
 }
