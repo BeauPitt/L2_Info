@@ -1,8 +1,11 @@
+package tp4;
+
 class Element {
 
 	private int val;
 	private Element suiv;
 	private Element prec;
+
 
 	public Element(int valeur,Element precedent, Element suivant){
 		val = valeur;
@@ -31,4 +34,5 @@ class Element {
 	public void setPrecedent(Element j) {
 		suiv = j;
 	}
+
 }

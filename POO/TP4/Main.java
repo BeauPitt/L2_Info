@@ -1,3 +1,7 @@
+package tp4;
+
+
+
 class Main {
 	public static void main(String[] args) {
 
@@ -10,10 +14,16 @@ class Main {
 		
 		// Exercice 2
 
-		Liste l = new Liste(10);
-		l.ajouterElem(15);
-
-		
-		
+		Liste l = new Liste(0);
+		for(int i=1; i<10;i++){
+			l.add(i);
+		}
+		//Element e = new Element(3, null, null);
+		//System.out.println(l.contains(e));
+                // Return de la fonction contains qui déconne mais fonctionne
+                l.afficherListe();
+                l.reverse();
+                l.afficherListe();
+                
 	}
 }

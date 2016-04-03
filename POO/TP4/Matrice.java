@@ -1,3 +1,5 @@
+package tp4;
+
 class Matrice {
 	// Attributs
 	int nbLgn;
