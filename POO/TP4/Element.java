@@ -1,4 +1,4 @@
-package tp4;
+// package tp4;
 
 class Element {
 
@@ -7,7 +7,7 @@ class Element {
 	private Element prec;
 
 
-	public Element(int valeur,Element precedent, Element suivant){
+	public Element(int valeur,Element precedent, Element suivant) {
 		val = valeur;
 		suiv = suivant;
 		prec = precedent;
@@ -22,7 +22,7 @@ class Element {
 		return prec;
 	}
 
-	public int getValeur(){
+	public int getValeur() {
 		return val;
 	}
 

@@ -1,22 +1,22 @@
-package tp4;
+// package tp4;
 
 class Matrice {
 	// Attributs
-	int nbLgn;
-	int nbCol;
-	int diag;
-	int[][] mat;
+	private int nbLgn;
+	private int nbCol;
+	private int diag;
+	private int[][] mat;
 
 	// Constructeurs
 	public Matrice(int tL, int tC) {
-			mat = new int[tL][tC];
-			nbCol = tC;
-			nbLgn = tL;
-			for (int i = 0; i < this.nbLgn; i++) {			
-				for (int j = 0; j < this.nbCol; j++) {
-					mat[i][j] = i+j;
-				}
+		mat = new int[tL][tC];
+		nbCol = tC;
+		nbLgn = tL;
+		for (int i = 0; i < this.nbLgn; i++) {			
+			for (int j = 0; j < this.nbCol; j++) {
+				mat[i][j] = i+j;
 			}
+		}
 	}
 
 	// triangulaire
@@ -24,11 +24,11 @@ class Matrice {
 		diag = diagonale;
 		int lignes = diag;
 		for (int i = lignes; i >=0; i--) {			
-				for (int j = 0; j<diag; j++) {
-					mat = new int[i][j];
-				}
-				diag -= 1;
+			for (int j = 0; j<diag; j++) {
+				mat = new int[i][j];
 			}
+			diag -= 1;
+		}
 	}
 
 	public Matrice ajouter(Matrice m) {
@@ -44,11 +44,11 @@ class Matrice {
 	}
 
 	public void afficher() { 
-			for (int i = 0; i < this.nbLgn; i++) {			
-					for (int j = 0; j < this.nbCol; j++) {
-						System.out.print(this.mat[i][j] + " ");
-					}
-					System.out.println("");
+		for (int i = 0; i < this.nbLgn; i++) {			
+			for (int j = 0; j < this.nbCol; j++) {
+				System.out.print(this.mat[i][j] + " ");
 			}
+			System.out.println("");
+		}
 	}
 }
