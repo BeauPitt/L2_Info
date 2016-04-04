@@ -1,5 +1,8 @@
 var element = document.getElementById("boomerang");
+var asideBoo = document.getElementById("span_boomerang");
 
-element.onclick = function() {
-        alert("Vous m'avez cliqué !");
-};
+function clique() {
+       asideBoo.style.display = "block";
+    };
+
+element.addEventListener("click", clique);
