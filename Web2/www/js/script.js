@@ -1,14 +1,26 @@
-//alert("test");
+// alert("test");
 
-var nom = document.getElementById("lastname");
-var pnom = document.getElementById("firsname");
-var mail = document.getElementById("useremail");
-var mdp = document.getElementById("usrpwd");
-var pseudo = document.getElementById("usrname");
-var datnais = document.getElementById("birthdate");  
+// recup les elems du form
+var nom = document.getElementById("lastname"); // pas etre vide
+var pnom = document.getElementById("firsname"); // pas etre vide
+var mail = document.getElementById("useremail"); // regExp
+var mdp = document.getElementById("usrpwd"); // regExp
+var pseudo = document.getElementById("usrname"); // length
+var datnais = document.getElementById("birthdate"); // typeDate ( = true)
+
+// regExp
+var regEmail = new RegExp(/^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/);
 
 function checkForm() { 
     // l'input est réactivé si tous les elements sont validés
+    
 }
 
-lastname.addEventListener("click", function(){alert("test");});
+useremail.addEventListener("click", function() {
+    if (mail.value == regEmail) {
+        alert(nom.value);
+    }
+    else {
+        alert('lol')
+    }
+});
