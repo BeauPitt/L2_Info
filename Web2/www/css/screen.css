@@ -13,10 +13,11 @@
  	aside.items {
  		display: none;
  	}
- 	body {
+ 	body, footer {
  			margin-left: 0%;
 			margin-right: 0%;
  	}
+
  }
  @media screen and (min-width: 700px) {
  	nav.mobile {
