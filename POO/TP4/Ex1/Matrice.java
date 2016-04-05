@@ -31,6 +31,7 @@ class Matrice {
 		}
 	}
 
+	// Additionne deux matrices
 	public Matrice ajouter(Matrice m) {
 		Matrice r = new Matrice(m.nbLgn, m.nbCol);
 		if (this.nbLgn == m.nbLgn && this.nbCol == m.nbCol) {
@@ -42,7 +43,8 @@ class Matrice {
 		}
 		return r;
 	}
-
+	
+	// Affiche la matrice
 	public void afficher() { 
 		for (int i = 0; i < this.nbLgn; i++) {			
 			for (int j = 0; j < this.nbCol; j++) {

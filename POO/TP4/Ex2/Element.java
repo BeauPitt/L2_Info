@@ -6,7 +6,7 @@ class Element {
 	private Element suiv;
 	private Element prec;
 
-
+	// Constructeur de l'élement
 	public Element(int valeur,Element precedent, Element suivant) {
 		val = valeur;
 		suiv = suivant;
@@ -34,5 +34,5 @@ class Element {
 	public void setPrecedent(Element j) {
 		suiv = j;
 	}
-
+	
 }
