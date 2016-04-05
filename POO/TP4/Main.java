@@ -1,4 +1,4 @@
-package tp4;
+// package tp4;
 
 
 
@@ -8,22 +8,25 @@ class Main {
 		// Exercice 1
 
 		/*Matrice m = new Matrice(2,2);
+		m.afficher();
 		Matrice n = new Matrice(2,2);
+		m.afficher();
 		Matrice o = m.ajouter(n);
 		o.afficher();*/
 		
-		// Exercice 2
+		// // Exercice 2
 
-		Liste l = new Liste(0);
-		for(int i=1; i<10;i++){
-			l.add(i);
-		}
-		//Element e = new Element(3, null, null);
-		//System.out.println(l.contains(e));
-                // Return de la fonction contains qui déconne mais fonctionne
-                l.afficherListe();
-                l.reverse();
-                l.afficherListe();
-                
+		// Liste l = new Liste(0);
+		// for (int i=1; i<10;i++) {
+		// 	l.add(i);
+		// }
+		// //Element e = new Element(3, null, null);
+		// //System.out.println(l.contains(e));
+  //       // Return de la fonction contains qui déconne mais fonctionne
+        // l.afficherListe();
+        // l.reverse();
+        // l.afficherListe();
+        Hashmapp h = new Hashmapp();
+        h.put(1,2);
 	}
 }
