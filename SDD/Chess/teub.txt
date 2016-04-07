@@ -1,2 +1,6 @@
-CC les fdp
+Classes : 
 
+Jeu (Main)
+Joueur => (ordinateur), humain
+Plateau (awt ?!) -> constitué de 64 cases.
+pion => tour, cavalier, dame, rois, fou,...
