@@ -18,7 +18,7 @@ class Objet {
 	}
 	
 	// Fonction toString
-	public String toString(){
+	public String toString() {
 		return "Objet : "+ this.key + "," + this.value;
 	}
 }

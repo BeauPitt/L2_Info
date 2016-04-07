@@ -8,7 +8,7 @@ class Liste {
 	private Element currObj;
 	private int index = 0;
 
-	// Constructeur de la liste qui donne une valeur au premier élément de la liste
+	// Constructeur de la liste qui donne une valeur au premier element de la liste
 	public Liste(int firstVal) {
 		Element init = new Element(firstVal, null, null);
 		lastObj= init;
@@ -16,7 +16,7 @@ class Liste {
 		tmp = null;
 	}
 
-	// Ajoute un élément dans la liste
+	// Ajoute un element dans la liste
 	public boolean add(int valeur) {
 		tmp = new Element(valeur, lastObj, null);
 		lastObj.setSuivant(tmp);
@@ -26,7 +26,7 @@ class Liste {
 		return true;
 	}
 	
-	// Retourne la valeur grâce à l'index
+	// Retourne la valeur grace a l'index
 	public int getValue(int index) {
 		currObj = firstObj;
 		for(int i=0; i<=index; i++) {
@@ -56,7 +56,7 @@ class Liste {
 		return true;
 	}
 	
-	// Retourne si oui ou non un élément e est contenu dans la liste
+	// Retourne si oui ou non un element e est contenu dans la liste
 	public boolean contains(Element e) {
 		int val = e.getValeur();
                 Element temp1;
@@ -70,7 +70,7 @@ class Liste {
         return false;
 	}
         
-	// Fonction qui échanges la valeurs d'une liste pour qu'elle soit à l'envers (fonctionne pas)
+	// Fonction qui echange la valeurs d'une liste pour qu'elle soit a l'envers (fonctionne pas)
     public void reverse() {
         Element tmp1;
         Element tmp2;
@@ -91,7 +91,7 @@ class Liste {
 		return index;
 	}
         
-	// Affiche la liste (fonction utilisée uniquement pour les phases de test et debug)
+	// Affiche la liste (fonction utilisee uniquement pour les phases de test et debug)
     public void afficherListe() {
         currObj=firstObj;
         for (int i =0; i<=this.getSize(); i++) {

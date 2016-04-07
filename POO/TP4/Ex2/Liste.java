@@ -29,7 +29,7 @@ class Liste {
 	// Retourne la valeur grâce à l'index
 	public int getValue(int index) {
 		currObj = firstObj;
-		for(int i =0; i<=index;i++) {
+		for(int i = 0; i<=index; i++) {
 			currObj = currObj.getSuivant();
 			return currObj.getValeur();
 		}
@@ -60,7 +60,7 @@ class Liste {
 	public boolean contains(Element e) {
 		int val = e.getValeur();
                 Element temp1;
-        for(int i=0; i<this.getSize(); i++){
+        for(int i= 0; i<this.getSize(); i++){
         	if(val == currObj.getValeur()) {
     			return true;
     		}
@@ -70,13 +70,13 @@ class Liste {
         return false;
 	}
         
-	// Fonction qui échanges la valeurs d'une liste pour qu'elle soit à l'envers (fonctionne pas)
+	// Fonction qui échange les valeurs d'une liste pour qu'elle soit à l'envers (ne fonctionne pas)
     public void reverse() {
         Element tmp1;
         Element tmp2;
         currObj=firstObj;
 
-        for (int i =0; i<=this.getSize(); i++) {
+        for (int i = 0; i<=this.getSize(); i++) {
             tmp1 = currObj.getPrecedent();
             tmp2 = currObj.getSuivant();
             currObj.setSuivant(tmp1);
@@ -94,7 +94,7 @@ class Liste {
 	// Affiche la liste (fonction utilisée uniquement pour les phases de test et debug)
     public void afficherListe() {
         currObj=firstObj;
-        for (int i =0; i<=this.getSize(); i++) {
+        for (int i = 0; i<=this.getSize(); i++) {
             System.out.print(" " + currObj.getValeur());
             currObj = currObj.getSuivant();
          

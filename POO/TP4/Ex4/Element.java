@@ -6,7 +6,7 @@ class Element {
 	private Element suiv;
 	private Element prec;
 
-	// Constructeur de l'élement
+	// Constructeur de l'element
 	public Element(int valeur,Element precedent, Element suivant) {
 		val = valeur;
 		suiv = suivant;

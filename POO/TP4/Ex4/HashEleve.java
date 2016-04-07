@@ -9,15 +9,15 @@ public class HashEleve {
 		nombreEleve = taille;
 	}
 	
-	// Methode qui remplis la Hashtable avec le nombre souhaité d'élève
+	// Methode qui remplit la Hashtable avec le nombre souhaite d'eleve
 	public void remplirHash() {
 		h = new Hashmapp();
-		for(int i=0; i<nombreEleve;i++){
+		for(int i = 0; i<nombreEleve; i++){
 			h.put(i, (int)(Math.random()*(20 + 1)));
 		}
 	}
 	
-	// Récupère la valeur pour la clef i
+	// Recupere la valeur pour la clef i
 	public int get(int i) {
 		return h.getValue(i);
 	}

@@ -6,7 +6,7 @@ class Main {
 	
 	public static void main(String[] args) {
 
-		// || Exercice 3 ||
+        // || Exercice 3 ||
 		
         Hashmapp h = new Hashmapp();
         h.put(1,2);

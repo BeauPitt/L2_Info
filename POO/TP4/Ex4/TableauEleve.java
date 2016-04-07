@@ -4,7 +4,7 @@ public class TableauEleve {
 	private int nombreEtudiants;
 	private int tableau[];
 	
-	// Constructeur qui stocke le nombre d'élève à ajouter
+	// Constructeur qui stocke le nombre d'eleve a ajouter
 	public TableauEleve(int nb){
 		nombreEtudiants = nb;
 		tableau = new int[nombreEtudiants];
@@ -17,7 +17,7 @@ public class TableauEleve {
 		}
 	}
 	
-	// Retourne un élément ce plaçant en i
+	// Retourne un element ce placant en i
 	public int get(int i) {
 		return this.tableau[i];
 	}

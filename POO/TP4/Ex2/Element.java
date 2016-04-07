@@ -2,6 +2,7 @@
 
 class Element {
 
+	// Attributs
 	private int val;
 	private Element suiv;
 	private Element prec;

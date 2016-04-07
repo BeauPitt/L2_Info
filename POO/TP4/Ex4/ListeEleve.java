@@ -8,7 +8,7 @@ public class ListeEleve {
 		
 	}
 	
-	// Methode qui remplis la liste avec le nombre souhaité d'élève
+	// Methode qui remplit la liste avec le nombre souhaite d'eleve
 	public void remplirListe() {
 		l = new Liste((int)(Math.random()*(20 + 1)));
 		for (int i=1; i<nombreEleve;i++) {

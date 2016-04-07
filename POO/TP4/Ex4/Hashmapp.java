@@ -6,10 +6,10 @@ class Hashmapp {
 	
 	// Constructeur 
 	public Hashmapp() {
-		tab =new ArrayList<Objet>();
+		tab = new ArrayList<Objet>();
 	}
 
-	// Ajoute un élément dans la Hashtable
+	// Ajoute un element dans la Hashtable
 	public void put(int k, int v) {
 		Objet o = new Objet(k,v);
 		tab.add(o);
@@ -18,7 +18,7 @@ class Hashmapp {
 	// Retourne si oui ou non la clef k existe dans la Hashtable
 	public boolean containsKey(int k) {
 		Objet o;
-		for(int i=0; i<tab.size(); i++){
+		for(int i = 0; i<tab.size(); i++){
 			o = tab.get(i);
 			if(o.getKey() == k){
 				return true;
@@ -51,7 +51,7 @@ class Hashmapp {
 		return null;
 	}
 	
-	// Retourne la valeur dont la clef associé est k
+	// Retourne la valeur dont la clef associe est k
 	public int getValue(int k){
 		Objet o;
 		for(int i=0; i<tab.size(); i++){
@@ -68,7 +68,7 @@ class Hashmapp {
 		return this.tab.size();
 	}
 	
-	// Affiche la Hashtable (fonction utilisée surtout pour la phase de test)
+	// Affiche la Hashtable (fonction utilisee surtout pour la phase de test)
 	public void afficherHash(){
 		for(int i=0; i<tab.size(); i++){
 			System.out.print(tab.get(i).getValue() +" ");
