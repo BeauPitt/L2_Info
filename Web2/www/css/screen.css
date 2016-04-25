@@ -7,6 +7,10 @@
  	aside.index {
  		display: none;
  	}
+ 	article.index {
+ 		margin-left: 0%;
+ 		width:100%;
+ 	}
  	aside.astuces {
  		display: none;
  	}
