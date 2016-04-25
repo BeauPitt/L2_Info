@@ -8,8 +8,95 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes" />
 	<link rel="stylesheet" media="screen " href="css/screen.css" type="text/css" />		
 	<link rel="shortcut icon" href="img/favicon.ico"/>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
+
+			<!-- LE CONTENU DE LA POPUP -->
+
+		<div class="modal blur-effect" id="popup">
+			<div class="popup-content">
+				<img class="img_pop" id="boomerang" alt="boomerang.png" src="img/boomerang.png" />
+				<h3>Boomerang</h3>
+				<hr/><br/>
+				<div>
+					<strong>Objet Activable :</strong><p> Vous posséder maintenant un boomerang que vous pouvez jeter sur vos ennemis pour les paralyser.</p>
+					<strong>Recharge :</strong><p> Quasi instantanné.</p>					
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal blur-effect" id="popup2">
+			<div class="popup-content">
+				<img class="img_pop" alt="book_sin.png" src="img/book_sin.png">
+				<h3>The Book of Sin</h3>
+				<hr/><br/>
+				<div>
+					<strong>Objet Activable :</strong><p> Fait apparaitre un objet aléatoire dans la salle (Bombes, Coeurs, Piéces, Pilules, Batteries ou Cartes de Tarot).</p>
+					<strong>Recharge :</strong><p> Toutes les 4 salles</p>					
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal blur-effect" id="popup3">
+			<div class="popup-content">
+				<img class="img_pop" alt="book_belial.png" src="img/book_belial.png">
+				<h3>The Book of Belial</h3>
+				<hr/><br/>
+				<div>
+					<strong>Objet Activable :</strong><p> Vous donne +2 Dégâts 1.5x de multiplication de dégâts si vous possédez déjà le Blood of the Martyr.</p>
+					<strong>Recharge :</strong><p> Toutes les 3 salles</p>					
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal blur-effect" id="popup4">
+			<div class="popup-content">
+				<img class="img_pop" alt="bible.png" src="img/bible.png">
+				<h3>The Bible</h3>
+				<hr/><br/>
+				<div>
+					<strong>Objet Activable :</strong><p> Donne des ailes d'ange à Isaac lui permettant de voler.</p>
+					<strong>Recharge :</strong><p> Toutes les 6 salles</p>					
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal blur-effect" id="popup5">
+			<div class="popup-content">
+				<img class="img_pop" alt="anarchist_book.png" src="img/anarchist_book.png">
+				<h3>Anarchist's Cookbook</h3>
+				<hr/><br/>
+				<div>
+					<strong>Objet Activable :</strong><p> Fait tomber une pluie de bombes à des positions aléatoires sur une salle.</p>
+					<strong>Recharge :</strong><p> Toutes les 3 salles</p>					
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal blur-effect" id="popup6">
+			<div class="popup-content">
+				<img class="img_pop" alt="th_bean.png" src="img/th_bean.png">
+				<h3>The Bible</h3>
+				<hr/><br/>
+				<div>
+					<strong>Objet Activable :</strong><p> Isaac lâche une caisse empoisonnant les ennemis à proximité.</p>				
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FIN DE LA POPUP -->
+	<div class="container">
+	<div class="content">
+	
 	<header>
 		<h1>The Binding of Isaac Wiki</h1>
 		<!-- <img src="" alt="banniere"/> -->
@@ -48,37 +135,35 @@
 		</ul>		
 		<hr />
 	</nav>
-	<aside class="items">
-		<span id="span_boomerang" class="spanBoo">
-		<p>Objet Activable : Vous posséder maintenant un boomerang que vous pouvez jeter sur vos ennemis pour les paralyser.</p>
-		<p>Recharge : Quasi instantanné.</p>
-		<span>
-	</aside>
+
+
+		
+
 	<article>
-		<section>
+		<section class="items">
 			<h2 id="actifs">Actifs</h2>
 			<ul class="galerie">
 				<li>
-					<img id="boomerang" alt="boomerang.png" src="img/boomerang.png" />
+					<img class="popup-button" data-modal="popup" id="boomerang" alt="boomerang.png" src="img/boomerang.png" />
 				</li>
 				<li>
-					<img alt="book_sin.png" src="img/book_sin.png">
+					<img class="popup-button" data-modal="popup2" alt="book_sin.png" src="img/book_sin.png">
 				</li>
-				    <img alt="book_belial.png" src="img/book_belial.png">
+				    <img class="popup-button" data-modal="popup3" alt="book_belial.png" src="img/book_belial.png">
 				<li>
-					<img alt="bible.png" src="img/bible.png">
-				</li>
-				<li>
-					<img alt="anarchist_book.png" src="img/anarchist_book.png">
+					<img class="popup-button" data-modal="popup4" alt="bible.png" src="img/bible.png">
 				</li>
 				<li>
-					<img alt="th_bean.png" src="img/th_bean.png">
+					<img class="popup-button" data-modal="popup5" alt="anarchist_book.png" src="img/anarchist_book.png">
 				</li>
 				<li>
-					<img alt="best_friend.png" src="img/best_friend.png">
+					<img class="popup-button" data-modal="popup6" alt="th_bean.png" src="img/th_bean.png">
 				</li>
 				<li>
-					<img alt="blank_card.png" src="img/blank_card.png">
+					<img class="popup-button" data-modal="popup7" alt="best_friend.png" src="img/best_friend.png">
+				</li>
+				<li>
+					<img class="popup-button" data-modal="popup8" alt="blank_card.png" src="img/blank_card.png">
 				</li>
 				<li>
 					<img alt="blood_right.png" src="img/blood_right.png">
@@ -88,9 +173,6 @@
 				</li>
 				<li>
 					<img alt="book_secret.png" src="img/book_secret.png">
-				</li>
-				<li>
-					<img alt="book_shadow.png" src="img/book_shadow.png">
 				</li>
 				<li>
 					<img alt="book_shadow.png" src="img/book_shadow.png">
@@ -142,6 +224,16 @@
 	<footer>
 		<p>L2 Info - TP WEB</p>
 	</footer>
-	<script type="text/javascript" src="js/items.js"></script>	
+</div>
+</div>
+	<div class="overlay"></div>
+	<!-- POP UP-->
+	<script src="js/popup.js"></script>
+	<script>
+		// important pour IEs
+		var polyfilter_scriptpath = '/js/';
+	</script>
+	<script type="text/javascript" src="js/items.js"></script>
+	<script src="js/cssParser.js"></script>	
 </body>
 </html>

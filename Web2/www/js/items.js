@@ -10,7 +10,3 @@ function clique() {
     };
 
 element.addEventListener("click", clique);
-
-element.onclick = (function() {
-        alert("Vous m'avez cliqué !");
-});

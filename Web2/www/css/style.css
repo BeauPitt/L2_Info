@@ -104,6 +104,7 @@ aside {
 	font-size: 120%;
 }
 
+
 a {
 	color :lightblue;
 	text-decoration: none;
@@ -207,10 +208,191 @@ img {
 	image-rendering: -moz-crisp-edges;
 }
 
+.img_pop {
+	margin:0px;
+	width: 8%;
+	height: 8%;
+	float: left;
+}
+
 h3 {
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 span.spanBoo {
 	display: none;
+}
+
+
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 250px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	background: #222;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.show {
+	visibility: visible;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.show ~ .overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup-content {
+	color: #fff;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+	padding: 6% 10%;
+}
+
+.popup-content h3 {
+	margin: 0;
+	text-align: center;
+	font-size: 3.4em;
+	font-weight: 300;
+	position: relative;
+}
+
+.popup-content h3:before {
+	position: absolute;
+	background: url(../img/img-titre.png) no-repeat left center;
+	width: 47px;
+	height: 38px;
+	content: "";
+	top: 0px;
+	left: 0px;
+}
+
+.popup-content .para {
+	color: #73556b;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+.popup-content > div {
+	padding: 0px;
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.15em;
+}
+
+.popup-content > div p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.popup-content > div ul {
+	margin: 0;
+	padding: 0 0 30px 20px;
+}
+
+.popup-content > div ul li {
+	padding: 5px 0;
+}
+
+.popup-content button {
+	display: block;
+	margin: 0 auto;
+	font-size: 0.8em;
+}
+
+.close {
+	background: url(../img/close.png) no-repeat;
+	height: 49px;
+	width: 49px;
+	position: absolute;
+	right: -35px;
+	top: -35px;
+	z-index: 9999;
+	cursor: pointer;
+	opacity: 1;
+	-webkit-transition: all ease-in-out 0.3s;
+	-o-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
+}
+
+.close:hover {
+	opacity: 0.2;
+}
+
+.submit {
+	background: #e74c3c url(../img/heart.png) no-repeat 90% center;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	opacity: 1;
+	cursor: pointer;
+	-webkit-transition: all ease-in-out 0.3s;
+	-o-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
+}
+
+.submit:hover {
+	opacity: 0.5;
+}
+
+
+/* Effet blur */
+.show.blur-effect ~ .overlay {
+	background: rgba(40,0,0,0.4);
+}
+
+.show.blur-effect ~ .container, .show.blur-effect ~ .bgall{
+	-webkit-filter: blur(30px);
+	-moz-filter: blur(30px);
+	filter: blur(30px);
+}
+
+.blur-effect .popup-content {
+	-webkit-transform: translateY(-5%);
+	-moz-transform: translateY(-5%);
+	-ms-transform: translateY(-5%);
+	transform: translateY(-5%);
+	opacity: 0;
+}
+
+.show.blur-effect ~ .container,
+.blur-effect .popup-content, .show.blur-effect ~ .bgall {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.show.blur-effect .popup-content {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
 }
