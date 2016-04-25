@@ -28,12 +28,21 @@
  	nav.mobile {
  		display : none;
  	}
+  article {
+    margin: 0%;
+    padding: 0%;
+  }
+  section {
+    margin : 0%;
+    padding: 0%;
+  }
  }
  @media screen and (max-width: 700px) {
  	nav.web {
  		display : none;
  	}
  }
+<<<<<<< HEAD
  @media screen and (max-width: 1230px) {
 
 	.popup-content h3:before {
@@ -66,3 +75,5 @@
 	}
 
 }
+=======
+>>>>>>> origin/master
