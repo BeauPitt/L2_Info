@@ -220,9 +220,10 @@ h3 {
 span.spanBoo {
 	display: none;
 }
-<<<<<<< HEAD
 
-
+.popup-button {
+	margin-bottom: 60px;
+}
 
 .modal {
 	position: fixed;
@@ -234,7 +235,7 @@ span.spanBoo {
 	height: auto;
 	z-index: 2000;
 	visibility: hidden;
-	background: #222;
+	background: #473542;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -289,7 +290,7 @@ span.spanBoo {
 	width: 47px;
 	height: 38px;
 	content: "";
-	top: 0px;
+	top: 18px;
 	left: 0px;
 }
 
@@ -364,7 +365,7 @@ span.spanBoo {
 
 /* Effet blur */
 .show.blur-effect ~ .overlay {
-	background: rgba(40,0,0,0.4);
+	background: rgba(123,53,92,0.4);
 }
 
 .show.blur-effect ~ .container, .show.blur-effect ~ .bgall{

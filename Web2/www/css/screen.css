@@ -42,8 +42,8 @@
  		display : none;
  	}
  }
- 
- @media screen and (max-width: 1230px) {
+
+@media screen and (max-width: 1230px) {
 
 	.popup-content h3:before {
 		display: none;
