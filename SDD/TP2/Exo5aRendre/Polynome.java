@@ -14,9 +14,15 @@ class Polynome {
     poly = p;
   }
 
+  public void Saisie() {
+    Scanner sc = new Scanner(System.in);
+    poly = sc.nextLine();
+  }
+
+  // ToString
   public String toString() {
     return poly;
   }
 
-  System.out.println();
+
 }
