@@ -1,11 +1,11 @@
 import java.awt.*;
 import java.io.*;
-//import java.awt.image.BufferedImage ;
+import java.awt.image.BufferedImage ;
 
 class Dessin extends Canvas {
 
 	public void paint(Graphics g) {
-		/*g.setColor(Color.blue);
+		g.setColor(Color.blue);
 		g.drawRect(0, 0, 20, 20);
 		// echiquier 8x8
 		g.fillRect(0,0,0,0);
@@ -14,9 +14,9 @@ class Dessin extends Canvas {
 		}
 		for (int i = 0; i < 8; i++) {
 			g.drawLine(i*8,0,8*8,i*8);
-		}*/
+		}
 
-		/*File f = new File("psg.jpg");
+		File f = new File("psg.jpg");
 		BufferedImage bi = null;
 
 		try {
@@ -25,7 +25,7 @@ class Dessin extends Canvas {
 			e.printStackTrace();
 		}
 
-		g.drawImage(bi,0,0,null);*/
+		g.drawImage(bi,0,0,null);
 
 	}
 

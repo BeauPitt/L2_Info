@@ -7,7 +7,7 @@ class TPFrame extends Frame implements ItemListener {
 	Checkbox cb = new Checkbox();
 	Choice cc = new Choice();
 
-	public void itemStateChanged()
+	// public void itemStateChanged()
 		
 	public TPFrame() {
 		this.setVisible(true);
