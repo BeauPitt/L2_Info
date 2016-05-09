@@ -46,30 +46,22 @@
 			<li>
 				<a href="register.html">Inscription</a>
 			</li>
-			<li><a href="login.html">Connexion</a></li>		
+			<li><a href="login.html">Connexion</a></li>
 		</ul>
 		<hr/>	
 	</nav>
 
 	<article class="">
-		<h2>Formulaire d'inscription</h2>
+		<h2>Formulaire de Connexion</h2>
 		
-		<form name="form" action="htbin/register.py" method="post">
+		<form name="form" action="htbin/login.py" method="post">
 			<div class="col1">
-                <p>Nom</p>
-                <input type="text" name="lastname" id="lastname">
                 <p>Nom d'utilisateur</p>
                 <input type="text" name="username" id="username">
-                <p>Date de naissance (jj/mm/aaaa)</p>
-                <input type="text" name="birthdate" id="birthdate"> <!-- facultatif-->
 			</div>
 			<div class="col2">
-                <p>Prenom(s)</p>
-                <input type="text" name="firstname" id="firstname">
                 <p>Mot de passe</p>
                 <input type="password" name="userpwd" id="userpwd">
-                <p>e-mail</p>
-                <input type="text" name="useremail" id="useremail">
 			</div>
 			<br/>
 			<div class="col3">
