@@ -3,6 +3,11 @@
 	src : url("FiraSans.otf");
 }
 
+@font-face {
+	font-family: Upheaval;
+	src : url("upheavtt.ttf");
+}
+
 html {
 	color : lightgray;
 	background-color: rgba(0, 0, 0, 0.88);
@@ -25,6 +30,8 @@ header {
 	background: url("../img/fondbanniere.jpeg") repeat fixed 0% 0% transparent;
 	text-align: center;
   margin-top: 1%;
+  font-family: Upheaval;
+  font-size: 150%;
 }
 
 hr.head {
@@ -35,6 +42,7 @@ nav {
 	text-align: center;
 	font-size: 150%;
 	background-color: #222;
+	font-family: Upheaval;
 }
 
 article {
@@ -45,13 +53,13 @@ article {
 
 section {
 	/*float: left;*/
-	margin-left: 5%;
-	width: 70%;
+	margin-left: 50%;
+	width: 60%;
   height: 70%;
 }
 
 p {
-  text-align: justify;
+  text-align: left;
 }
 
 form p {
@@ -132,12 +140,12 @@ td {
 footer {
 	text-align: center;
 	position:fixed;
-  height:30px;
+  height:20px;
   background: url("../img/fondbanniere.jpeg") repeat fixed 0% 0% transparent;
   bottom:0px;
   left:0px;
   right:0px;
-  padding: 1px;
+  padding: 5px;
   margin-left: 10%;
 	margin-right: 10%;
 
@@ -182,7 +190,7 @@ footer {
   text-decoration: none;
   color: #fff;
   padding: 8px 0;
-  font-family: FiraSans, serif;
+  font-family: Upheaval;
   font-size:1.2em
 }
 #menu-accordeon ul li a, #menu-accordeon li:hover li a {
@@ -284,6 +292,7 @@ span.spanBoo {
 	font-size: 3.4em;
 	font-weight: 300;
 	position: relative;
+	font-family: Upheaval;
 }
 
 .popup-content h3:before {
