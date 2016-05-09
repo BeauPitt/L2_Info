@@ -13,8 +13,8 @@ body {
 	/*font-family: sans-serif;*/
 	font-family: FiraSans, serif;
   background-color: #111;
-	margin-left: 17%;
-	margin-right: 17%;
+	margin-left: 10%;
+	margin-right: 10%;
 	margin-bottom: 60px;
 	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
 	-moz-box-shadow:    0px 0px 30px 0px rgba(0, 0, 0, 1);
@@ -42,10 +42,11 @@ article {
   padding-bottom: 10%;
 }
 
+
 section {
 	/*float: left;*/
 	margin-left: 5%;
-	width: 90%;
+	width: 70%;
   height: 70%;
 }
 
@@ -93,7 +94,7 @@ aside {
 	float: right;
 	width: 20%;
 	height: 20%;
-	margin-top: 20%;
+	margin-top: 7%;
 	margin-right: 1%;
 	background-color: #222;
 	padding: 2%;
@@ -137,8 +138,8 @@ footer {
   left:0px;
   right:0px;
   padding: 5px;
-  margin-left: 17%;
-	margin-right: 17%;
+  margin-left: 10%;
+	margin-right: 10%;
 
 }
 

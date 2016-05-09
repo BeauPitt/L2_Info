@@ -3,42 +3,6 @@
     display: none;
   }
 }
- @media screen and (max-width: 1000px) {
- 	aside.index {
- 		display: none;
- 	}
- 	section.index {
- 		margin-right: 0%;
- 		margin-left: 0%;
- 		width:100%;
- 	}
- 	aside.astuces {
- 		display: none;
- 	}
- 	body, footer {
- 			margin-left: 0%;
-			margin-right: 0%;
- 	}
-
- }
- @media screen and (min-width: 700px) {
- 	nav.mobile {
- 		display : none;
- 	}
-  article {
-    margin: 0%;
-    padding: 0%;
-  }
-  section {
-    margin : 0%;
-    padding: 0%;
-  }
- }
- @media screen and (max-width: 700px) {
- 	nav.web {
- 		display : none;
- 	}
- }
 
 @media screen and (max-width: 1230px) {
 
@@ -48,13 +12,60 @@
 
 }
 
-@media screen and (max-width: 680px) {
 
-	h1 {
+ @media screen and (max-width: 1000px) {
+ 	aside.index {
+ 		display: none;
+ 	}
+ 	aside.astuces {
+ 		display: none;
+ 	}
+ 	body, footer {
+ 			margin-left: 0%;
+			margin-right: 0%;
+ 	}
+
+ 	section {
+ 		width: 100%;
+ 		margin-right: 0%;
+ 		margin-left: 0%;
+ 	}
+
+ }
+ @media screen and (min-width: 700px) {
+ 	nav.mobile {
+ 		display : none;
+ 	}
+
+  article {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  section {
+    margin : 0%;
+    padding: 0%;
+  }
+
+ }
+ @media screen and (max-width: 700px) {
+ 	nav.web {
+ 		display : none;
+ 	}
+ 	table {
+ 		margin: 0em;
+ 	}
+
+ 	td {
+ 		padding : 0em;
+ 		font-size: 70%;
+ 	}
+
+ 	h1 {
 		font-size: 42px;
 	}
-	
-}
+ }
+
 
 @media screen and (max-width: 480px) {
 
