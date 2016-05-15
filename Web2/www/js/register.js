@@ -37,7 +37,7 @@ username.addEventListener("input", CheckUsrnm);
 
 // Date de naissance 
 var datetemp = document.getElementById("birthdate");
-var res = datetemp.value.split("/",3);
+var res = datetemp.value.split("/",3); // on découpe le string en arraylist, séparation par "/"
 var regDate = new RegExp(/^[0-9]{2}[/][0-9]{2}[/][0-9]{4}/);
 console.log(res);
 var datnais = new Date();
@@ -85,9 +85,9 @@ function CheckUsrnm() {
 function CheckDate() {
 	if (regDate.test(datetemp.value)) {
 		console.log("ok");
+		verif[5] = true;
 		if (parseInt(res[2]) == datnais.getFullYear() && parseInt(res[1])-1 == datnais.getMonth() && parseInt(res[0])== datnais.getDate()) {
-			console.log("Date ?"+birthdate.value)
-			verif[5] = true;
+			console.log("Date :"+birthdate.value)
 		}
 	}
 }
