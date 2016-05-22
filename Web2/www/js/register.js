@@ -49,42 +49,42 @@ birthdate.addEventListener("input", CheckDate);
 
 function CheckNom() {
 	if (lastname.value != "") {
-		console.log(lastname.value); // debug
+		// console.log(lastname.value); // debug
 		verif[0] = true;
 	}
 }
 
 function CheckPrenom() {
 	if (firstname.value != "") {
-		console.log(firstname.value); // debug
+		// console.log(firstname.value); // debug
 		verif[1] = true;
 	}
 }
 
 function CheckEmail() {
 	if (regEmail.test(useremail.value)) {
-		console.log(useremail.value); // debug
+		// console.log(useremail.value); // debug
 		verif[2] = true;
 	}
 }
 
 function CheckPwd() {
 	if (regPwd.test(userpwd.value)) {
-		console.log(userpwd.value);
+		// console.log(userpwd.value);
 		verif[3] = true;
 	}
 }
 
 function CheckUsrnm() {
 	if (username.value.length >= 6) {
-		console.log(username.value);
+		// console.log(username.value);
 		verif[4] = true;
 	}
 }
 
 function CheckDate() {
 	if (regDate.test(datetemp.value)) {
-		console.log("ok");
+		// console.log("ok");
 		verif[5] = true;
 		if (parseInt(res[2]) == datnais.getFullYear() && parseInt(res[1])-1 == datnais.getMonth() && parseInt(res[0])== datnais.getDate()) {
 			console.log("Date :"+birthdate.value)
@@ -107,10 +107,3 @@ function CheckForm() {
 }
 
 window.setInterval(CheckForm, "1000");
-
-function Test() {
-	// body...
-	alert("Test");
-}
-
-// CheckForm();

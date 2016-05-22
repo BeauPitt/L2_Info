@@ -2,12 +2,13 @@
 	aside.perso {
 		display: none;
 	}
+
 }
 
 @media screen and (max-width: 1230px) {
 	.popup-content h3:before {
 		display: none;
-	}	
+	}
 
 }
 
@@ -73,5 +74,6 @@
 		right: 1px;
 		top: 1px;
 	}
+
 }
 
