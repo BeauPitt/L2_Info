@@ -38,7 +38,7 @@ username.addEventListener("input", CheckUsrnm);
 // Date de naissance 
 var datetemp = document.getElementById("birthdate");
 var res = datetemp.value.split("/",3); // on découpe le string en arraylist, séparation par "/"
-var regDate = new RegExp(/^[0-9]{2}[/][0-9]{2}[/][0-9]{4}/);
+var regDate = new RegExp(/^[0-9]{2}[/][0-9]{2}[/](19|20)\d\d/);
 console.log(res);
 var datnais = new Date();
 datnais.setFullYear(res[2]);

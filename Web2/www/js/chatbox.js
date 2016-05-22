@@ -1,0 +1,2 @@
+// on récupère le contenu de la textarea quand on appuie sur le bouton, on envoie un xhr à chatsend pour qu'il recupère le message
+// pour afficher le message on récupère depuis chatget avec encore un xhr et en selectant avec jquery la chat box
