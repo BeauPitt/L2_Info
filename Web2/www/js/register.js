@@ -50,45 +50,69 @@ birthdate.addEventListener("input", CheckDate);
 function CheckNom() {
 	if (lastname.value != "") {
 		// console.log(lastname.value); // debug
+		document.getElementById("plastname").style.color = "lightgray";
 		verif[0] = true;
+	}
+	else {
+		document.getElementById("plastname").style.color = "darkred";
 	}
 }
 
 function CheckPrenom() {
 	if (firstname.value != "") {
 		// console.log(firstname.value); // debug
+		document.getElementById("pfirstname").style.color = "lightgray";
 		verif[1] = true;
+	}
+	else {
+		document.getElementById("pfirstname").style.color = "darkred";
 	}
 }
 
 function CheckEmail() {
 	if (regEmail.test(useremail.value)) {
 		// console.log(useremail.value); // debug
+		document.getElementById("puseremail").style.color = "lightgray";
 		verif[2] = true;
+	}
+	else {
+		document.getElementById("puseremail").style.color = "darkred";
 	}
 }
 
 function CheckPwd() {
 	if (regPwd.test(userpwd.value)) {
 		// console.log(userpwd.value);
+		document.getElementById("puserpwd").style.color = "lightgray";
 		verif[3] = true;
+	}
+	else {
+		document.getElementById("puserpwd").style.color = "darkred";
 	}
 }
 
 function CheckUsrnm() {
 	if (username.value.length >= 6) {
 		// console.log(username.value);
+		document.getElementById("pusername").style.color = "lightgray";
 		verif[4] = true;
+	}
+	else {
+		document.getElementById("pusername").style.color = "darkred";
 	}
 }
 
 function CheckDate() {
 	if (regDate.test(datetemp.value)) {
 		// console.log("ok");
+		document.getElementById("pbirthdate").style.color = "lightgray";
 		verif[5] = true;
 		if (parseInt(res[2]) == datnais.getFullYear() && parseInt(res[1])-1 == datnais.getMonth() && parseInt(res[0])== datnais.getDate()) {
 			console.log("Date :"+birthdate.value)
 		}
+	}
+	else {
+		document.getElementById("pbirthdate").style.color = "darkred";
 	}
 }
 
